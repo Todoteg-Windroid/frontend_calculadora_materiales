@@ -9,11 +9,11 @@ export default function MenuGrid({ options, onSelect }) {
                 <button
                 key={option.id}
                 onClick={() => onSelect(option)}
-                className="flex items-center gap-4 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 hover:from-blue-100 hover:to-indigo-100 rounded-xl border-2 border-blue-200 hover:border-blue-400 transition transform hover:scale-105"
+                className="flex items-center gap-4 p-6 bg-linear-to-r from-purple-50 to-violet-50 hover:from-purple-100 hover:to-violet-100 rounded-xl border-2 border-purple-200 hover:border-purple-400 transition transform hover:scale-105"
                 >
-                <div className="bg-blue-600 p-3 rounded-lg">
+                <div className="bg-[#470985] p-3 rounded-lg">
                     <Icon className="w-6 h-6 text-white" />
-                </div>
+                </div>  
                 <span className="text-lg font-semibold text-gray-800">{option.name}</span>
                 </button>
             );

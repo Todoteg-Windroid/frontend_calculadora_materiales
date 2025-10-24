@@ -39,8 +39,8 @@ export default function ResultDisplay({ result, onReset }) {
 
     return (
         <div>
-        <div className="bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-300 rounded-xl p-6 mb-6">
-            <h2 className="text-2xl font-bold text-green-800 mb-4">✓ Resultado del Cálculo</h2>
+        <div className="bg-linear-to-r from-purple-50 to-violet-50 border-2 border-purple-300 rounded-xl p-6 mb-6">
+            <h2 className="text-2xl font-bold text-[#470985] mb-4">✓ Resultado del Cálculo</h2>
             <div className="text-lg text-gray-700 mb-2">
             <span className="font-semibold">Tipo:</span> {result.type}
             </div>
@@ -56,15 +56,15 @@ export default function ResultDisplay({ result, onReset }) {
             )}
         </div>
 
-        <div className="bg-white border-2 border-gray-200 rounded-xl p-6 mb-6">
-            <h3 className="text-xl font-bold text-gray-800 mb-4">Materiales Necesarios</h3>
+        <div className="bg-white border-2 border-purple-200 rounded-xl p-6 mb-6">
+            <h3 className="text-xl font-bold text-[#470985] mb-4">Materiales Necesarios</h3>
             <div className="space-y-3">
             {Object.entries(result.materials).map(([key, value]) => {
                 const material = formatMaterial(key, value);
                 return (
-                <div key={key} className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                <div key={key} className="flex justify-between items-center p-3 bg-purple-50 rounded-lg">
                     <span className="font-medium text-gray-700">{material.label}</span>
-                    <span className="text-blue-600 font-bold">
+                    <span className="text-[#470985] font-bold">
                     {material.value} {material.unit}
                     </span>
                 </div>
@@ -75,7 +75,7 @@ export default function ResultDisplay({ result, onReset }) {
 
         <button
             onClick={onReset}
-            className="w-full bg-gradient-to-r from-gray-600 to-gray-700 text-white py-3 px-6 rounded-lg font-semibold hover:from-gray-700 hover:to-gray-800 transition"
+            className="w-full bg-[#757F9a] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#d7dde8] hover:text-gray-900 transition"
         >
             Realizar otro cálculo
         </button>

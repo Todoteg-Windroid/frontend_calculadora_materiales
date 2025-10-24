@@ -13,9 +13,9 @@ export default function CalculationForm({ option, onCalculate, loading }) {
             return (
             <>
                 <label className="block mb-4">
-                <span className="text-gray-700 font-medium">Espesor del muro (cm):</span>
+                <span className="text-[#470985] font-medium">Espesor del muro (cm):</span>
                 <select
-                    className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3"
+                    className="mt-1 block w-full rounded-lg border-purple-300 shadow-sm focus:border-[#470985] focus:ring-[#470985] p-3 "
                     onChange={(e) => setFormData({ ...formData, espesor: parseInt(e.target.value) })}
                     required
                 >
@@ -25,21 +25,21 @@ export default function CalculationForm({ option, onCalculate, loading }) {
                 </select>
                 </label>
                 <label className="block mb-4">
-                <span className="text-gray-700 font-medium">Largo (m):</span>
+                <span className="text-[#470985] font-medium">Largo (m):</span>
                 <input
                     type="number"
                     step="0.01"
-                    className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3"
+                    className="mt-1 block w-full rounded-lg border-purple-300 shadow-sm focus:border-[#470985] focus:ring-[#470985] p-3"
                     onChange={(e) => setFormData({ ...formData, largo: parseFloat(e.target.value) })}
                     required
                 />
                 </label>
                 <label className="block mb-4">
-                <span className="text-gray-700 font-medium">Alto (m):</span>
+                <span className="text-[#470985] font-medium">Alto (m):</span>
                 <input
                     type="number"
                     step="0.01"
-                    className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3"
+                    className="mt-1 block w-full rounded-lg border-purple-300 shadow-sm focus:border-[#470985] focus:ring-[#470985] p-3"
                     onChange={(e) => setFormData({ ...formData, alto: parseFloat(e.target.value) })}
                     required
                 />
@@ -50,11 +50,11 @@ export default function CalculationForm({ option, onCalculate, loading }) {
         case 'columna':
             return (
             <label className="block mb-4">
-                <span className="text-gray-700 font-medium">Largo (m):</span>
+                <span className="text-[#470985] font-medium">Largo (m):</span>
                 <input
                 type="number"
                 step="0.01"
-                className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3"
+                className="mt-1 block w-full rounded-lg border-purple-300 shadow-sm focus:border-[#470985] focus:ring-[#470985] p-3"
                 onChange={(e) => setFormData({ ...formData, largo: parseFloat(e.target.value) })}
                 required
                 />
@@ -65,31 +65,31 @@ export default function CalculationForm({ option, onCalculate, loading }) {
             return (
             <>
                 <label className="block mb-4">
-                <span className="text-gray-700 font-medium">Espesor (m):</span>
+                <span className="text-[#470985] font-medium">Espesor (m):</span>
                 <input
                     type="number"
                     step="0.01"
-                    className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3"
+                    className="mt-1 block w-full rounded-lg border-purple-300 shadow-sm focus:border-[#470985] focus:ring-[#470985] p-3"
                     onChange={(e) => setFormData({ ...formData, espesor: parseFloat(e.target.value) })}
                     required
                 />
                 </label>
                 <label className="block mb-4">
-                <span className="text-gray-700 font-medium">Ancho (m):</span>
+                <span className="text-[#470985] font-medium">Ancho (m):</span>
                 <input
                     type="number"
                     step="0.01"
-                    className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3"
+                    className="mt-1 block w-full rounded-lg border-purple-300 shadow-sm focus:border-[#470985] focus:ring-[#470985] p-3"
                     onChange={(e) => setFormData({ ...formData, ancho: parseFloat(e.target.value) })}
                     required
                 />
                 </label>
                 <label className="block mb-4">
-                <span className="text-gray-700 font-medium">Largo (m):</span>
+                <span className="text-[#470985] font-medium">Largo (m):</span>
                 <input
                     type="number"
                     step="0.01"
-                    className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3"
+                    className="mt-1 block w-full rounded-lg border-purple-300 shadow-sm focus:border-[#470985] focus:ring-[#470985] p-3"
                     onChange={(e) => setFormData({ ...formData, largo: parseFloat(e.target.value) })}
                     required
                 />
@@ -100,21 +100,21 @@ export default function CalculationForm({ option, onCalculate, loading }) {
             return (
             <>
                 <label className="block mb-4">
-                <span className="text-gray-700 font-medium">Ancho (m):</span>
+                <span className="text-[#470985] font-medium">Ancho (m):</span>
                 <input
                     type="number"
                     step="0.01"
-                    className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3"
+                    className="mt-1 block w-full rounded-lg border-purple-300 shadow-sm focus:border-[#470985] focus:ring-[#470985] p-3"
                     onChange={(e) => setFormData({ ...formData, ancho: parseFloat(e.target.value) })}
                     required
                 />
                 </label>
                 <label className="block mb-4">
-                <span className="text-gray-700 font-medium">Largo (m):</span>
+                <span className="text-[#470985] font-medium">Largo (m):</span>
                 <input
                     type="number"
                     step="0.01"
-                    className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3"
+                    className="mt-1 block w-full rounded-lg border-purple-300 shadow-sm focus:border-[#470985] focus:ring-[#470985] p-3"
                     onChange={(e) => setFormData({ ...formData, largo: parseFloat(e.target.value) })}
                     required
                 />
@@ -125,11 +125,11 @@ export default function CalculationForm({ option, onCalculate, loading }) {
         case 'iluminacion':
             return (
             <label className="block mb-4">
-                <span className="text-gray-700 font-medium">Superficie (m²):</span>
+                <span className="text-[#470985] font-medium">Superficie (m²):</span>
                 <input
                 type="number"
                 step="0.01"
-                className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3"
+                className="mt-1 block w-full rounded-lg border-purple-300 shadow-sm focus:border-[#470985] focus:ring-[#470985] p-3"
                 onChange={(e) => setFormData({ ...formData, superficie: parseFloat(e.target.value) })}
                 required
                 />
@@ -142,13 +142,13 @@ export default function CalculationForm({ option, onCalculate, loading }) {
 
     return (
         <div>
-        <h2 className="text-2xl font-semibold text-gray-800 mb-6">Calcular: {option.name}</h2>
+        <h2 className="text-2xl font-semibold text-[#470985] mb-6">Calcular: {option.name}</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
             {renderFields()}
             <button
             type="submit"
             disabled={loading}
-            className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-blue-700 hover:to-indigo-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full bg-[#757F9a] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#d7dde8] hover:text-gray-900 transition disabled:opacity-50 disabled:cursor-not-allowed"
             >
             {loading ? 'Calculando...' : 'Calcular'}
             </button>

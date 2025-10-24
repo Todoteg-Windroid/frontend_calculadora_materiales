@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Building2, Columns, Hammer, Home, Lightbulb, PaintBucket, X, History } from 'lucide-react';
+import { Building2, Columns, Hammer, Home, Lightbulb, PaintBucket, X, History, Import } from 'lucide-react';
 import MenuGrid from './components/MenuGrid.jsx';
 import CalculationForm from './components/CalculationForm.jsx';
 import ResultDisplay from './components/ResultDisplay.jsx';
 import HistoryView from './components/HistoryView.jsx';
+import Footer from './components/Footer.jsx';
 
 const API_URL = 'http://localhost:8082/api/calculations';
 
@@ -67,10 +68,10 @@ export default function ConstructionCalculator() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8 px-4">
+    <div className="min-h-screen bg-linear-to-br from-blue-50 to-indigo-100 py-8 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
-          <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-6 text-white">
+          <div className="bg-linear-to-r from-green-500 to-green-700 p-6 text-white">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <Hammer className="w-8 h-8" />
@@ -113,6 +114,7 @@ export default function ConstructionCalculator() {
               <ResultDisplay result={result} onReset={resetCalculator} />
             )}
           </div>
+          <Footer />
         </div>
       </div>
     </div>
